@@ -1,0 +1,10 @@
+<div id="header" class="header background-stuff">
+		<h2>Jacob's Site</h2>
+		<ul class="links no-bullet">
+			<li><%= link_to_unless_current("Home", @items['/']) %></li>
+			<li><%= link_to_unless_current("About", @items['/about/']) %></li>
+			<li><%= link_to_unless_current("Papers", @items['/papers/']) %></li>
+			<li><%= link_to("CV", @items['/CV/'], :target => "_blank") %></li>
+		</ul>
+		<%= render 'social' %>
+</div>

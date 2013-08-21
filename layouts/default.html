@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<%= render 'html_header' %>
+	<body>
+		<%= render 'header' %>
+		<div class="background-stuff main">
+			<%= render 'breadcrumbs' %>
+		</div>
+		<div class="background-stuff main", style="height: 100%;">
+			 <%= yield %>
+		</div>
+</html>

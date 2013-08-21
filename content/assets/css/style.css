@@ -1,0 +1,51 @@
+body {
+	background-size: 100%;
+	background: top right url(../img/cuppa_tea.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.box {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18pt;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.header {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18pt;
+	color: white;
+	top: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.header-fixed {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.links {
+	list-style-type: none;
+	list-style-position: outside;
+}
+.links * {
+	/*width: 30%;*/
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+}
+.links *:hover { 
+	background-color: white;
+	color: black;
+}
+.links a {
+	text-decoration: none;
+	color: white;
+}
+.links-selected {
+	background-color: white;
+	color: black;
+}

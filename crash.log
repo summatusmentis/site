@@ -1,0 +1,137 @@
+Crashlog created at 2013-08-21 00:44:00 -0500
+
+===== MESSAGE:
+
+FlickRaw::OAuthClient::FailedResponse: FlickRaw::OAuthClient::FailedResponse
+
+===== COMPILATION STACK:
+
+  - [item]   /stylesheet/ (rep default)
+
+===== STACK TRACE:
+
+  0. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/flickraw-0.9.6/lib/flickraw/oauth.rb:156:in `post'
+  1. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/flickraw-0.9.6/lib/flickraw/oauth.rb:92:in `post_form'
+  2. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/flickraw-0.9.6/lib/flickraw/api.rb:53:in `call'
+  3. (eval):3:in `search'
+  4. lib/helpers/flickr.rb:9:in `get_random_photo'
+  5. item /stylesheet/ (rep default):3:in `get_binding'
+  6. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/2.0.0/erb.rb:849:in `eval'
+  7. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/2.0.0/erb.rb:849:in `result'
+  8. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/filters/erb.rb:34:in `run'
+  9. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  10. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/result_data/item_rep.rb:344:in `filter'
+  11. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
+  12. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule_context.rb:55:in `filter'
+  13. ./Rules:17:in `block in load'
+  14. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  15. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  16. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:384:in `compile_rep'
+  17. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
+  18. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
+  19. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
+  20. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  21. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  22. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/commands/compile.rb:363:in `block in run'
+  23. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/commands/compile.rb:404:in `run_listeners_while'
+  24. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/commands/compile.rb:362:in `run'
+  25. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  26. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  27. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  28. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/command_runner.rb:13:in `call'
+  29. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  30. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  31. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  32. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  33. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  34. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  35. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  36. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  37. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli.rb:52:in `block in run'
+  38. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  39. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  40. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib/nanoc/cli.rb:50:in `run'
+  41. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/bin/nanoc:19:in `<top (required)>'
+  42. /usr/local/opt/ruby/bin/nanoc:23:in `load'
+  ... 45 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.4 © 2007-2013 Denis Defreyne.
+Running ruby 2.0.0 (2013-06-27) on x86_64-darwin12.4.0 with RubyGems 2.0.3.
+
+===== SYSTEM INFORMATION:
+
+Darwin Jacobs-MacBook-Pro-2.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  adsf 1.1.1
+  bigdecimal 1.2.0
+  colored 1.2
+  cri 2.3.0
+  faraday 0.8.8
+  faraday_middleware 0.9.0
+  flickr-objects 0.2.0
+  flickraw 0.9.6
+  io-console 0.4.2
+  json 1.7.7
+  kramdown 1.1.0
+  minitest 4.3.2
+  multi_xml 0.5.5
+  multipart-post 1.2.0
+  nanoc 3.6.4
+  psych 2.0.0
+  rack 1.5.2
+  rake 0.9.6
+  rdoc 4.0.0
+  simple_oauth 0.2.0
+  test-unit 2.0.0.0
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-Nyql7R/Render"
+Apple_Ubiquity_Message => "/tmp/launch-nIlpBj/Apple_Ubiquity_Message"
+CLICOLOR => "1"
+COLORFGBG => "11;15"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-k9C3Be/org.macosforge.xquartz:0"
+HOME => "/Users/jts"
+ITERM_PROFILE => "Hotkey Window"
+ITERM_SESSION_ID => "w1t2p0"
+LANG => "en_US.UTF-8"
+LOGNAME => "jts"
+LSCOLORS => "ExFxCxDxBxegedabagacad"
+MANPATH => "/opt/local/share/man:"
+NODE_PATH => "/usr/local/lib/node"
+OLDPWD => "/Users/jts"
+PATH => "/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/afs/bin:/Library/OpenAFS/Tools/etc:/Library/OpenAFS/Tools/bin:/Library/OpenAFS/Tools/root.client/usr:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin"
+PS1 => "\\[\\033[1m\\]\\[\\033[32m\\]\\u@\\h \\[\\033[36m\\]{\\d - \\t}\\[\\033[33m\\][\\w]\\[\\033[34m\\] $> \\[\\033[0m\\]"
+PWD => "/Users/jts/Dropbox/sites/professional"
+SECURITYSESSIONID => "186a4"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-eVjfv1/Listeners"
+SVN_EDITOR => "/usr/bin/vim"
+TERM => "xterm"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/h1/zjybqq7x1dz8d393tvbr3b580000gn/T/"
+USER => "jts"
+_ => "/usr/local/opt/ruby/bin/nanoc"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+
+===== LOAD PATHS:
+
+  0. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib
+  1. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/colored-1.2/lib
+  2. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/cri-2.3.0/lib
+  3. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nanoc-3.6.4/lib
+  4. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/gems/2.0.0/gems/flickraw-0.9.6/lib
+  5. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/site_ruby/2.0.0
+  6. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/site_ruby/2.0.0/x86_64-darwin12.4.0
+  7. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/site_ruby
+  8. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/vendor_ruby/2.0.0
+  9. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/vendor_ruby/2.0.0/x86_64-darwin12.4.0
+  10. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/vendor_ruby
+  11. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/2.0.0
+  12. /usr/local/Cellar/ruby/2.0.0-p247/lib/ruby/2.0.0/x86_64-darwin12.4.0
