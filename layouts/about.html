@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<%= render 'html_header' %>
-	<body>
+<%= render 'html_header' %>
+<body>
+	<div class="container">
+	  <div class="col-md-4">
 		<%= render 'header' %>
-		<div class="background-stuff main">
-			<%= render 'breadcrumbs' %>
 		</div>
-		<div class="background-stuff main", style="height: 100%;">
-			<img src="<%= @items['/photo/'].path %>" >
-			 <%= yield %>
+		<div class="col-md-8">
+		  <div class="box">
+				<%= render 'breadcrumbs' %>
+				<img src="<%= @items['/photo/'].path %>" >
+				<%= yield %>
+			</div>
 		</div>
+	</div>
+</body>
 </html>
