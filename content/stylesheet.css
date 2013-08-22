@@ -21,4 +21,36 @@ body {
 .no-bullet {
 	list-style-type: none;
 }
-
+@media (min-width: 992px) {
+    .links-toggle {
+        display: none;
+    }
+    #header .toggle {
+        display: block;
+    }
+}
+.links-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+.links-toggle:hover, .links-toggle:active {
+    background-color: rgba(255,255,255,0.25);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+.links-toggle .icon-bar {
+    background-color: #ffffff;
+    display: block;
+    margin: 3px 0;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+.links-toggle:hover .icon-bar {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
