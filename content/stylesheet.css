@@ -51,3 +51,33 @@ body {
 .links-toggle:hover .icon-bar {
     box-shadow: 0 1px 0 rgba(0,0,0,0.5);
 }
+/* By default it's not affixed in mobile views, so undo that */
+#header.affix {
+  position: static;
+}
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+  #header .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  #header.affix,
+  #header.affix-bottom {
+    width: 263px;
+  }
+  #header.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 20px;
+  }
+  #header.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  #header.affix-bottom,
+  #header.affix {
+    width: 330px;
+  }
+}
