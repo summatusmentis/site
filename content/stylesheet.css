@@ -6,17 +6,103 @@ body {
 	font-weight: 100;
 	font-size: 14pt;
 }
+a {
+	color: #000;
+	text-decoration: underline;
+	/*border-bottom: 2px dashed #555;*/
+}
+hr {
+	border: 2px solid white;
+}
+a:hover {
+	color: #000;
+	background-color: #FFF;
+	/*text-decoration: none;*/
+}
 #header h2 {
     margin-top: 0;
 }
 .box {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.65);
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     margin: 10px;
     padding: 20px;
 }
+.box-no-padding {
+    background-color: rgba(255,255,255,0.65);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 10px;
+}
+.add-padding {
+	padding: 20px;
+}
+.add-padding a {
+	text-decoration: none;
+	background-color: transparent;
+}
 .no-bullet {
+	width: 100%;
 	list-style-type: none;
+}
+.no-bullet a {
+	text-decoration: none;
+	padding-left: 10px;
+}
+.no-bullet li {
+	width: 100%;
+	color: #000;
+	margin: 2px 0px;
+}
+.active {
+	text-decoration: none;
+}
+.active, .no-bullet a:hover {
+	display: block;
+	min-width: 100%;
+	background-color: #000;
+	color: #FFF;
+	padding-left: 10px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.no-bullet-social {
+	text-indent: -1.5em;
+	list-style-position: outside;
+	list-style-type: none;
+}
+.no-bullet-social a {
+	text-decoration: none;
+}
+.no-bullet-social a:hover {
+	//background-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+}
+.spacing {
+	/*display: block;*/
+	text-align: center;
+}
+.spacing * {
+    background-color: rgba(0, 0, 0, 0.5);
+    /*border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;*/
+	font-size: 16pt;
+	/*font-weight: 500;*/
+	padding-left: 1em;
+	letter-spacing: 1em;
+	color: white;
+}
+.author-date {
+	font-size: 12pt;
+	left-margin: 2%;
 }
 @media (min-width: 992px) {
     .links-toggle {
@@ -30,8 +116,8 @@ body {
     position: relative;
     float: right;
     padding: 9px 10px;
-    background-color: transparent;
-    border: 1px solid #fff;
+    background-color: #000;
+    border: 1px solid #FFF;
     border-radius: 4px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.25);
 }
@@ -80,4 +166,7 @@ body {
   #header.affix {
     width: 330px;
   }
+}
+.breadcrumb {
+	background: transparent;
 }
