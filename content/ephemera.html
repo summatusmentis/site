@@ -1,0 +1,18 @@
+---
+Title: "Ephemera and other thoughts"
+layout: "ephemera"
+---
+<% sorted_articles.each do |post| %>
+	<% if(post[:published]) %>
+  		<div class='box'>
+    		<h2><%= link_to post[:title], post.path %></h2>
+			<aside><span class="author-date">By <%= post[:author] %> on <%= get_pretty_date(post) %></span></aside>
+    		<article>
+      		<%= post.compiled_content %>
+    		</article>
+  		</div>
+  		<div class="spacing">
+	  		<span>---</span>
+  		</div>
+	<% end %>
+<% end %>

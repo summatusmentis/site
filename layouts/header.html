@@ -1,18 +1,21 @@
-<div id="header" class="box">
-	<button type="button" class="links-toggle" data-toggle="collapse" data-target="#header .toggle">
+<div id="header" class="box-no-padding">
+	<div style="display: inline;">
+	<button type="button" class="add-padding links-toggle" data-toggle="collapse" data-target="#header .toggle">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-		<h2>Jacob's Site</h2>
-		<div class="toggle collapse">
-			<ul class="links no-bullet">
-				<li><%= link_to_unless_current("Home", @items['/']) %></li>
-				<li><%= link_to_unless_current("About", @items['/about/']) %></li>
-				<li><%= link_to_unless_current("Papers", @items['/papers/']) %></li>
-				<li><%= link_to("CV", @items['/CV/'], :target => "_blank") %></li>
-			</ul>
-			<%= render 'social' %>
-		</div>
+	<h2 class="add-padding">Jacob's Site</h2>
+	</div>
+	<div class="toggle collapse">
+		<ul class="no-bullet">
+			<li><%= link_to_unless_current("Home", @items['/']) %></li>
+			<li><%= link_to_unless_current("About", @items['/about/']) %></li>
+			<li><%= link_to_unless_current("Ephemera", @items['/ephemera/']) %></li>
+			<!-- <li><%= link_to_unless_current("Papers", @items['/papers/']) %></li> -->
+			<li><a href src=<%= relative_path_to('/CV/') %> target="_blank">CV <i class="icon-file"></i></li>
+		</ul>
+		<%= render 'social' %>
+	</div>
 </div>
