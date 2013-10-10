@@ -1,5 +1,0 @@
-<ol class="breadcrumb">
-<% breadcrumbs_trail.each do |b| %>
-	<li <%= b == @item ? 'class="active"' : "" %>><%= link_to(  b[:title] , b.reps[0].path) if b %></li>
-	<%end%>
-</ol>
