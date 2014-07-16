@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+8#!/usr/bin/env ruby
 
 # A few helpful tips about the Rules file:
 #
@@ -39,6 +39,10 @@ compile '/ephemera/' do
 	layout 'ephemera'
 end
 
+compile '/ephemera/build_article/' do
+  #nothing
+end
+
 compile '/ephemera/*' do
 	filter :kramdown
 	layout 'post'
@@ -55,6 +59,10 @@ end
 
 route '/stylesheet/' do
   '/style.css'
+end
+
+route '/build_article/' do
+  #nothing
 end
 
 #route '/ephemera/*' do

@@ -13,9 +13,11 @@
 			<li><%= link_to_unless_current("Home", @items['/']) %></li>
 			<li><%= link_to_unless_current("About", @items['/about/']) %></li>
 			<li><%= link_to_unless_current("Ephemera", @items['/ephemera/']) %></li>
-			<!-- <li><%= link_to_unless_current("Papers", @items['/papers/']) %></li> -->
-			<li><a href src=<%= relative_path_to('/CV/') %> target="_blank">CV <i class="icon-file"></i></li>
+			<li><%= link_to("CV " + "<i class='icon-file'></i>", @items['/CV/'], :target => "_blank") %></li>
 		</ul>
-		<%= render 'social' %>
+		<img class="img-responsive" src="../profile_pic.jpg" alt="Photo of Jacob">
+		<div style="margin-left: auto; margin-right: auto; text-align: center;">
+			<%= render 'social' %>
+		</div>
 	</div>
 </div>

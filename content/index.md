@@ -19,7 +19,7 @@ individuals and groups of people both individually and organizationally.
 Terveen](http://www-users.cs.umn.edu/~terveen/). My particular interests lie in
 the ways that technology can support and augment social goals and processes.  
 
-* __Building__ a system called CitizenSense, for crowdsourcing data in the world
+* __Building__ a system called FolkSource, for crowdsourcing data in the world
 around us.
 
 * __Photographing__ the minutae in the world. I try to capture the things that are

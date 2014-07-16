@@ -2,6 +2,7 @@
 <html>
 	<%= render 'html_header' %>
 	<body>
+		<%= render 'mapdiv' %>
 		<%= render 'header' %>
 		<div class="background-stuff main">
 			<%= render 'breadcrumbs' %>
@@ -9,6 +10,7 @@
 		<% sorted_articles.each  do |article| %>
 			<% render 'box' do %>
 				<%= article.compiled_content %>
-				<% end %>
-				<% end %>
+			<% end %>
+		<% end %>
+<%= render 'map' %>
 </html>
