@@ -3,9 +3,7 @@ title: About
 layout: about
 ---
 
-![Picture of Jake](../profile_pic.jpg){: .img-responsive}
-
-I\'m currently 24 years old, and just starting my 3rd year as a PhD student.
+I\'m currently 25 years old, and am in my 3rd year as a PhD student.
 
 During my undergraduate career at the [University of Minnesota -
 Morris](http://www.morris.umn.edu/academics/computerscience/), I focused my work
@@ -17,7 +15,13 @@ Resume](http://isr.cmu.edu).
 After these experiences, my interests broadened to technology that has a more
 direct impact societally.
 
-My research interests encompass mobile computing, and the role that mobile
-devices can play in affecting social change. I currently work on CitizenSense, a
-smartphone and web platform for crowdsourcing real-world data gathering, for use
-by non-profits, advocacy groups, and local municipalities.
+My research interests encompass organizational structures and motivations that
+support strong participation within sociotechnical systems. In particular, I'm
+interested in these towards supporting social change and civic engagement
+through mobile technologies.  I\'m interested in using mobile technologies and
+systems  to more deeply understand the organizational and social structures and
+their roles in participation within these communities and systems.
+
+I currently work on FolkSource, a smartphone and web platform for crowdsourcing
+real-world data gathering, for use by non-profits, advocacy groups, and local
+municipalities.

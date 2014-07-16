@@ -2,15 +2,16 @@
 <html>
 <%= render 'html_header' %>
 <body>
-	<div class="container">
-	  <div class="col-md-4">
+	<%= render 'mapdiv' %>
+	<div class="col-md-4">
 		<%= render 'header' %>
-		</div>
-		<div class="col-md-8">
-		  	<div class="box">
-			 	<%= yield %>
-		 	</div>
+	</div>
+	<div class="col-md-8">
+		<div class="box">
+			<%= yield %>
 		</div>
 	</div>
+<%= render 'quote' %>
 </body>
+<%= render 'map' %>
 </html>

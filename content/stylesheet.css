@@ -1,15 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 body {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url("assets/img/sand2_background.jpg");
-	font-family: 'Helvetica', sans-serif;
-	font-weight: 100;
-	font-size: 14pt;
+	font-family: 'Arvo', serif !important;
+	font-weight: 400;
+	font-size: 13pt;
 }
 a {
 	color: #000;
 	text-decoration: underline;
-	/*border-bottom: 2px dashed #555;*/
 }
 hr {
 	border: 2px solid white;
@@ -22,22 +19,20 @@ a:hover {
 #header h2 {
     margin-top: 0;
 }
-.box {
-    background-color: rgba(255,255,255,0.65);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
+.quote {
+	position: absolute;
+	font-size: 9pt;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
-.box-no-padding {
-    background-color: rgba(255,255,255,0.65);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+.box, .box-no-padding, .quote {
+    background-color: rgba(255,255,255,0.70);
+}
+.box, .box-no-padding {
     margin: 10px;
 }
-.add-padding {
+.add-padding, .box {
 	padding: 20px;
 }
 .add-padding a {
@@ -91,11 +86,7 @@ a:hover {
 }
 .spacing * {
     background-color: rgba(0, 0, 0, 0.5);
-    /*border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;*/
 	font-size: 16pt;
-	/*font-weight: 500;*/
 	padding-left: 1em;
 	letter-spacing: 1em;
 	color: white;
@@ -104,6 +95,20 @@ a:hover {
 	font-size: 12pt;
 	left-margin: 2%;
 }
+
+.map {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.map-overlay {
+	background-color: #000;
+	opacity: 0.65;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
 @media (min-width: 992px) {
     .links-toggle {
         display: none;
@@ -118,7 +123,7 @@ a:hover {
     padding: 9px 10px;
     background-color: #000;
     border: 1px solid #FFF;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     box-shadow: 0 1px 0 rgba(0,0,0,0.25);
 }
 .links-toggle:hover, .links-toggle:active {

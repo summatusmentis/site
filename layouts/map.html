@@ -1,0 +1,15 @@
+<script type="text/javascript">
+var layer = new L.StamenTileLayer("watercolor");
+var map = new L.Map("map", {
+    center: new L.LatLng(44.95, -93.1),
+    zoom: 11,
+	dragging: false,
+	doubleClickZoom: false,
+	scrollWheelZoom: false,
+	boxZoom: false,
+	keyboard: false,
+	zoomControl: false,
+	attributionControl: false
+});
+map.addLayer(layer);
+</script>
