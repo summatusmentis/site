@@ -35,6 +35,9 @@ a:hover {
 .add-padding, .box {
 	padding: 20px;
 }
+.papers ul {
+  list-style: none;
+}
 .add-padding a {
 	text-decoration: none;
 	background-color: transparent;
@@ -77,7 +80,7 @@ a:hover {
 	text-decoration: none;
 }
 .no-bullet-social a:hover {
-	//background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 }
 .spacing {
@@ -85,7 +88,7 @@ a:hover {
 	text-align: center;
 }
 .spacing * {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 	font-size: 16pt;
 	padding-left: 1em;
 	letter-spacing: 1em;
@@ -127,8 +130,8 @@ a:hover {
     box-shadow: 0 1px 0 rgba(0,0,0,0.25);
 }
 .links-toggle:hover, .links-toggle:active {
-    background-color: #FFF;
-    //box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: #FFF;*/
 }
 .links-toggle .icon-bar {
     background-color: #ffffff;

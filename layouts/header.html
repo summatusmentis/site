@@ -12,10 +12,11 @@
 		<ul class="no-bullet">
 			<li><%= link_to_unless_current("Home", @items['/']) %></li>
 			<li><%= link_to_unless_current("About", @items['/about/']) %></li>
+      <li><%= link_to_unless_current("Papers", @items['/papers/']) %></li>
 			<li><%= link_to_unless_current("Ephemera", @items['/ephemera/']) %></li>
-			<li><%= link_to("CV " + "<i class='icon-file'></i>", @items['/CV/'], :target => "_blank") %></li>
+      <li><%= link_to("CV (updated " + File.ctime(@items['/CV/'].raw_filename).strftime('%m/%d/%Y') + ") &nbsp; <i class='fa fa-file-pdf-o'></i>", @items['/CV/'], :target => "_blank") %></li>
 		</ul>
-		<img class="img-responsive" src="../profile_pic.jpg" alt="Photo of Jacob">
+    <img class="img-responsive" src=<%= relative_path_to(@items['/profile_pic/']) %> alt="Photo of Jacob">
 		<div style="margin-left: auto; margin-right: auto; text-align: center;">
 			<%= render 'social' %>
 		</div>

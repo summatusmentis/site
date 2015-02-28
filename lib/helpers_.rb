@@ -1,3 +1,4 @@
+include PaperHelper
 include PostHelper
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
