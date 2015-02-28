@@ -6,7 +6,7 @@ layout: "ephemera"
 	<% if(post[:published]) %>
   		<div class='box'>
     		<h2><%= link_to post[:title], post.path %></h2>
-			<aside><span class="author-date">By <%= post[:author] %> on <%= get_pretty_date(post) %></span></aside>
+      <aside><span class="author-date">By <%= post[:author] %>. Created on <%= get_created_date(post) %>, published on <%= get_published_date(post) %></span></aside>
     		<article>
       		<%= post.compiled_content %>
     		</article>

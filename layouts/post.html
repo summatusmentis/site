@@ -14,7 +14,7 @@
 	<div class="col-md-8">
 		<div class="box">
 			<h2><%= item[:title] %></h2>
-			<aside><span class="author-date">By <%= item[:author] %> on <%= get_pretty_date(item) %></span></aside> 
+      <aside><span class="author-date">By <%= item[:author] %>. Created on <%= get_created_date(item) %>, published on <%= get_published_date(item) %></span></aside>
 			<article>
 				<%= yield %>
 			</article>

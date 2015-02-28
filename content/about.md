@@ -3,7 +3,7 @@ title: About
 layout: about
 ---
 
-I\'m currently 25 years old, and am in my 3rd year as a PhD student.
+I\'m currently 26 years old, and am in my 4th year as a PhD student.
 
 During my undergraduate career at the [University of Minnesota -
 Morris](http://www.morris.umn.edu/academics/computerscience/), I focused my work
@@ -25,3 +25,5 @@ their roles in participation within these communities and systems.
 I currently work on FolkSource, a smartphone and web platform for crowdsourcing
 real-world data gathering, for use by non-profits, advocacy groups, and local
 municipalities.
+
+During the summer of 2014, I was an IBM Watson intern, working at IBM Research Almaden.

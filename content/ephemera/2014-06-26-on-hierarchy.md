@@ -1,6 +1,7 @@
 ---
 title: "On Organizational Hierarchy"
 created_at: 2014-06-26
+published_at: 2014-06-26
 kind: article
 author: "JTS"
 published: false
