@@ -58,6 +58,12 @@ data_sources:
     # will have the identifier “/about/” when turned off, but when turned on
     # it will become “/about.html/” instead.
     allow_periods_in_identifiers: false
+      #-
+      #type: filesystem_verbose
+      #items_root: /peer_reviewed
+      #-
+      #type: filesystem_verbose
+      #items_root: /workshops
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
