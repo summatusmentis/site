@@ -25,7 +25,7 @@ module PaperHelper
       out += '* '
 
       # list in preparation
-      unless !@item[:"#{prep}"].nil?
+      unless @item[:"#{prep}"].empty?
         out += '**IN PREPARATION** '
       end
 
@@ -62,7 +62,7 @@ module PaperHelper
       out += '. (Acceptance rate: **' + @item[:"#{acceptance}"] + '**)'
 
       #list best paper award
-      unless !@item[:"#{bp}"].nil?
+      unless @item[:"#{bp}"].empty?
         out += '**IN PREPARATION** '
       end
 
@@ -71,13 +71,13 @@ module PaperHelper
 
       #Author-izer link
       #check the value of authorizer YAML
-      unless !@item[:"#{authorizer}"].nil?
+      unless @item[:"#{authorizer}"].empty?
         out += '[' + link_to("ACM Author-izer <i class='fa fa-external-link'></i>", @item[:"#{authorizer}"], :target => "_blank") + ']'
       end
 
       #DOI link
       #check the value of DOI YAML
-      unless !@item[:"#{doi}"].nil?
+      unless @item[:"#{doi}"].empty?
         out += '[' + link_to("DOI <i class='fa fa-external-link'></i>", @item[:"#{doi}"], :target => "_blank") + ']'
       end
 
